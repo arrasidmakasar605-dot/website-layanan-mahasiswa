@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Website Layanan Mahasiswa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   <header>
+       <h1>Website Layanan Mahasiswa</h1>
+       <p>Semua Kebutuhan Akademik dalam Satu Tempat</p>
+   </header>
+   <nav aria-label="Navigasi utama">
+       <a href="#beranda">Beranda</a>
+       <a href="#layanan">Layanan</a>
+       <a href="#permohonan">Permohonan</a>
+    </nav>
+    <main>
+      <section id="beranda">
+        <h2>Selamat Datang, Mahasiswa!</h2>
+        <p>
+            Website ini menyediakan berbagai layanan akademik
+            untuk membantu kebutuhan administrasi mahasiswa
+            dengan lebih mudah.
+        </p>
+      </section>
+      
+    <section id="layanan">
+        <h2>Layanan Mahasiswa</h2>
+        <p>Pilih layanan akademik yang kamu butuhkan.</p>
+
+        <div class="daftar-layanan"></div>
+
+        <div class="kartu-layanan">
+            <h3>Surat Keterangan Aktif Kuliah</h3>
+            <p>Layanan untuk mengajukan surat keterangan aktif sebagai mahasiswa.</p>
+            <a href="#permohonan">Ajukan Layanan</a>
+        </div>
+
+        <div class="kartu-layanan">
+            <h3>Informasi Akademik</h3>
+            <p>Layanan untuk mendapatkan informasi seputar kegiatan akademik.</p>
+            <a href="#permohonan">Lihat Layanan</a>
+        </div>
+
+        <div class="kartu-layanan">
+            <h3>Permohonan Surat</h3>
+            <p>Layanan untuk mengajukan kebutuhan surat administrasi mahasiswa.</p>
+            <a href="#permohonan">Ajukan Surat</a>
+        </div>
+    </section>
+    
+    <section id="permohonan">
+        <h2>Formulir Permohonan Layanan</h2>
+        <p>Silakan isi formulir berikut sesuai kebutuhanmu.</p>
+
+        <form>
+            <div>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div>
+                <label for="email">Email Mahasiswa</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="jenis-layanan">Jenis Layanan</label>
+                <select id="jenis-layanan" name="jenis-layanan" required>
+                    <option value="">Pilih layanan</option>
+                    <option value="surat-aktif">Surat Keterangan Aktif Kuliah</option>
+                    <option value="informasi-akademik">Informasi Akademik</option>
+                    <option value="permohonan-surat">Permohonan Surat</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="tujuan">Tujuan Permohonan</label>
+                <textarea id="tujuan" name="tujuan" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Kirim Permohonan</button>
+        </form>
+    </section>
+    </main>
+    
+ <footer>
+    <p>&copy; 2026 Website Layanan Mahasiswa</p>
+    <p>Portal Informasi dan Layanan Akademik Mahasiswa</p>
+ </footer>
+
+</body>
+
+</html>
